@@ -1,5 +1,5 @@
 class Song
-  include Memorable::InstanceMethods
+  # include Memorable::InstanceMethods
 
   @@all = []
   attr_accessor :name
