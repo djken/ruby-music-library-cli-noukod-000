@@ -1,6 +1,6 @@
 class Song
-  include Memorable::InstanceMethods
-  
+  include Concerns::Memorable
+
   @@all = []
   attr_accessor :name
   attr_reader :artist, :genre
