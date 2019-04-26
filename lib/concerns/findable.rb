@@ -13,7 +13,7 @@ module Concerns::Findable
       self.find_by_name(name) || self.create(name)
   end
 
-  def create(namee)
-    object = self.new(namee).tap {|object| object.save}
+  def create(name)
+    object = self.new(name).tap {|object| object.save}
   end
 end
