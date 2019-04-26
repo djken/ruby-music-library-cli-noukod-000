@@ -15,9 +15,9 @@ class Song
     @@all
   end
 
-  # def self.destroy_all
-  #   all.clear
-  # end
+  def self.destroy_all
+    all.clear
+  end
 
   def save
     Song.all << self
