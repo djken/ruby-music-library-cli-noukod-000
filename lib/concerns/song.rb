@@ -30,6 +30,8 @@ class Song
     new(name).tap {|song| song.save}
   end
 
+  # Setter method for the artist method.
+  # Return the song by calling the methog add_song.
   def artist=(artist)
     @artist = artist
     artist.add_song self
@@ -40,6 +42,7 @@ class Song
     genre.songs << self if !genre.songs.include?(self)
   end
 
+  
   def self.find_by_name(name)
      all.detect {|song| song.name == name}
   end
