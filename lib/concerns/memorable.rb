@@ -1,7 +1,7 @@
 module Memorable
   module ClassMethods
     def destroy_all
-      self.all.clear
+      all.clear
     end
 
     # def create(name)
