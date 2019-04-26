@@ -10,6 +10,7 @@ class Song
     self.genre = (genre) if genre
   end
 
+  # This is a class method that returns all instances of Song class
   def self.all
     @@all
   end
