@@ -12,9 +12,9 @@ class Song
   end
 
   # This is a class method that returns all instances of Song class
-  # def self.all # Class reader
-  #   @@all
-  # end
+  def self.all # Class reader
+    @@all
+  end
 
   # Reset the state of the @@ll class to an empty array  thereby deleting all previous song instances.
   def self.destroy_all
