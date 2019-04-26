@@ -19,6 +19,7 @@ class Song
     all.clear
   end
 
+  # Save all created instances of Song class in @@all class variable
   def save
     Song.all << self
   end
