@@ -20,11 +20,11 @@ class Artist
     Artist.all << self
   end
 
-  def self.create(name)
-    new(name).tap do |artist|
-    artist.save
-  end
-  end
+  # def self.create(name)
+  #   new(name).tap do |artist|
+  #   artist.save
+  # end
+  # end
 
   def add_song(song)
     @songs << song if !songs.include?(song)
