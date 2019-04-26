@@ -20,11 +20,11 @@ class Genre
     Genre.all << self
   end
 
-  # def self.create(name)
-  #   new(name).tap do |genre|
-  #     genre.save
-  #   end
-  # end
+  def self.create(name)
+    new(name).tap do |genre|
+      genre.save
+    end
+  end
 
   def artists
     songs.collect do |song|
