@@ -25,6 +25,7 @@ class Song
     Song.all << self
   end
 
+  # This is a class method that create and stores instances.
   def self.create(name)
     new(name).tap {|song| song.save}
   end
