@@ -2,7 +2,7 @@ class Genre
   @@all = []
   attr_accessor :name, :songs
   extend Concerns::Findable
-  include Memorable::InstanceMethods
+  # include Memorable::InstanceMethods
 
   def initialize(name)
     @name = name
@@ -13,9 +13,9 @@ class Genre
     @@all
   end
 
-  # def self.destroy_all
-  #   all.clear
-  # end
+  def self.destroy_all
+    all.clear
+  end
 
   def save
     Genre.all << self
