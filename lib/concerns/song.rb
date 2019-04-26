@@ -11,7 +11,7 @@ class Song
   end
 
   # This is a class method that returns all instances of Song class
-  def self.all
+  def self.all # Class reader
     @@all
   end
 
