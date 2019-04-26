@@ -2,6 +2,7 @@ class Artist
   @@all = []
   attr_accessor :name, :songs
   extend Concerns::Findable
+  include Memorable::InstanceMethods
 
   def initialize(name)
     @name = name
