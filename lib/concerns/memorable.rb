@@ -4,11 +4,11 @@ module Memorable
       self.all.clear
     end
 
-    def create(name)
-      object = self.new(name).tap do |object|
-        object.save
-      end
-    end
+    # def create(name)
+    #   object = self.new(name).tap do |object|
+    #     object.save
+    #   end
+    # end
   end
 
   module InstanceMethods
