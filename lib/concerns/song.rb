@@ -27,11 +27,11 @@ class Song
   end
 
   # This is a class method that create and stores instances.
-  # def self.create(name)
-  #   new(name).tap do |song|
-  #     song.save
-  #   end
-  # end
+  def self.create(name)
+    new(name).tap do |song|
+      song.save
+    end
+  end
 
   # Setter method for the artist method.
   # Return the song by calling the methog add_song.
