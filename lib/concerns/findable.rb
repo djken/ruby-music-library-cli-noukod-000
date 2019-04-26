@@ -14,8 +14,6 @@ module Concerns::Findable
   end
 
   def create(name)
-      object = self.new(name).tap do |object|
-        object.save
-      end
-    end
+    object = self.new(name).tap do {|object| object.save}
+  end
 end
