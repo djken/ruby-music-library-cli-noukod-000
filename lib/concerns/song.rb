@@ -27,7 +27,7 @@ class Song
 
   # This is a class method that create and stores instances.
   def self.create(name)
-    new(name).tap do |song| 
+    new(name).tap do |song|
       song.save
     end
   end
