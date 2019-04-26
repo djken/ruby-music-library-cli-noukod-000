@@ -2,7 +2,7 @@ class Genre
   @@all = []
   attr_accessor :name, :songs
   extend Concerns::Findable
-  include Concerns::Memorable
+  include Memorable::InstanceMethods
 
   def initialize(name)
     @name = name
