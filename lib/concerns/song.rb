@@ -15,6 +15,7 @@ class Song
     @@all
   end
 
+  # Reset the state of the @@ll class to an empty array  thereby deleting all previous song instances.
   def self.destroy_all
     all.clear
   end
