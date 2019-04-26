@@ -3,6 +3,8 @@ class Song
   attr_accessor :name
   attr_reader :artist, :genre
 
+  include Memorable::InstanceMethods
+  
   def initialize(name, artist = "",genre = "")
     @name = name
     artist != ""? self.artist = artist : @artist = artist
