@@ -1,5 +1,5 @@
 module Memorable
-  module ClassMethods
+  # module ClassMethods
     def destroy_all
       self.all.clear
     end
